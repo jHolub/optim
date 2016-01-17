@@ -1,5 +1,5 @@
 
-getResult <- function(field, cd, sk){ 
+getResult <- function(field, sk, cd){ 
 
   modelSd <- stehfest(field[1], cd, sk)
   #MSE    

@@ -1,0 +1,55 @@
+
+# Graph cars using a y axis that ranges from 0 to 12
+plot(data,log="x",  xlab="t[s]", ylab="s[m]", ylim=c(0,2), xlim=c(100,100000))
+
+# Graph trucks with red dashed line and square points
+lines(validace,lwd=1)
+
+# Create a title with a red, bold/italic font
+#title(main="Model vs. HV2a")
+
+legend(100000,22,c('HV2a'), cex=1,pch=1:0, lty=0:1)
+da_40<- read.table("D:/fig1.txt", header=T, sep="\t")
+da_10000<- read.table("D:/30_10000.txt", header=T, sep="\t")
+
+
+
+
+
+
+
+figa<- read.table("D:/fig3a.txt", header=T, sep="\t")
+
+figb<- read.table("D:/fig3b.txt", header=T, sep="\t")
+
+plot(figa,log="x", xlab="td()", ylab="swd()", ylim=c(0,20), xlim=c(1000000,10000000000), type="l", pch = 23, col='black')
+                                                                          
+lines(figb,lwd=1, type="o",pch = 25, col='red')
+
+legend(900000,19.9,c('model (Agarwal et al. 1970)',' field data'), pch=23:25, lwd=1:1, col=c('black','red'))
+
+
+
+
+
+
+
+lines(da_10000,lwd=1, type="o", pch = 24, col='red')
+
+legend(100,40,c('W 30; Cd1000','W 40; Cd1000','W 30; Cd10000'), cex=1, pch=23:22:24, lty=1:1:1, col=c('blue','green','red'))
+
+
+
+
+
+
+
+))
+> plot(data1,log="x",  xlab="t[s]", ylab="s[m]", ylim=c(0,2), xlim=c(10,100000))
+> plot(data1,log="x",  xlab="t[s]", ylab="s[m]", ylim=c(0,2), xlim=c(10,1000000))
+> plot(data1,log="x",  xlab="t[s]", ylab="s[m]", ylim=c(0,2), xlim=c(100,100000))
+> plot(data1,log="x",  xlab="t[s]", ylab="s[m]", ylim=c(0,2), xlim=c(100,100000))
+> plot(data1,log="x",  xlab="t[s]", ylab="s[m]", ylim=c(0,1.7), xlim=c(100,100000))
+
+0.2061757719714965  384.06889511657596
+1.460332541567696 5971.2812525058525
